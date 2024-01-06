@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sns
 import streamlit as st
 import matplotlib.pyplot as plt
-df=pd.read_csv("C:/Users/harshit/Downloads/train.csv")
+df=pd.read_csv("train.csv")
 sns.histplot(x=df["PassengerId"])
 st.pyplot(plt.gcf())
 
