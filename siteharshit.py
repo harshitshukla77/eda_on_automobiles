@@ -6,6 +6,10 @@ df=pd.read_csv("train.csv")
 sns.histplot(x=df["PassengerId"])
 st.pyplot(plt.gcf())
 
+fig,ax=plt.subplots()
+ax.pie(x=df["Survived"].value_counts())
+st.pyplot(fig)
+
 st.sidebar.title("harshit")
 x= st.slider("enter your value")
 st.write(x)
